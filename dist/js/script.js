@@ -28,41 +28,41 @@ for (let i = 0; i < 2; i++) {
 
 
 // __________WHILE__________
-// let i = 0;
-// while (i < 2) {
-// 	let a = prompt("Обов'язкова стаття витрат", ''),
-// 		b = prompt("Скільки коштуватиме?", '');
+let i = 0;
+while (i < 2) {
+	let a = prompt("Обов'язкова стаття витрат", ''),
+		b = prompt("Скільки коштуватиме?", '');
 	
-// 	if ( (typeof(a))=== 'string' && (typeof(a))!= null && (typeof(b))!= null && a != '' && b != '' && a.length < 50) {
-// 		console.log('Done');
-// 		appData.expenses[a] = b;
-// 	} else {
-// 		console.log('Inpit error');
-// 		i--;
-// 	}
+	if ( (typeof(a))=== 'string' && (typeof(a))!= null && (typeof(b))!= null && a != '' && b != '' && a.length < 50) {
+		console.log('Done');
+		appData.expenses[a] = b;
+	} else {
+		console.log('Inpit error');
+		i--;
+	}
 
-// 	i++;
-// }
+	i++;
+}
 
 
 
 // __________DO__________
 // let i = 0;
-// do {
-// 	let a = prompt("Обов'язкова стаття витрат", ''),
-// 		b = prompt("Скільки коштуватиме?", '');
+do {
+	let a = prompt("Обов'язкова стаття витрат", ''),
+		b = prompt("Скільки коштуватиме?", '');
 
-// 	if ( (typeof(a))=== 'string' && (typeof(a))!= null && (typeof(b))!= null && a != '' && b != '' && a.length < 50) {
-// 		console.log('Done');
-// 		appData.expenses[a] = b;
-// 	} else {
-// 		console.log('Inpit error');
-// 		i--;
-// 	}
+	if ( (typeof(a))=== 'string' && (typeof(a))!= null && (typeof(b))!= null && a != '' && b != '' && a.length < 50) {
+		console.log('Done');
+		appData.expenses[a] = b;
+	} else {
+		console.log('Inpit error');
+		i--;
+	}
 
-// 	i++;
-// }
-// while(i < 2);
+	i++;
+}
+while(i < 2);
 
 
 
