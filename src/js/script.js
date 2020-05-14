@@ -1,23 +1,25 @@
 "use strict";
 
-let money = prompt( 'Ваш бюджет?', '' ),
-    time = prompt( 'Введіть дату в форматі DD-MM-YYYY', '' );
+let nuberOfFilms = +prompt('Скільки фільмів подивилися?', '');
 
-let appData = {
-    budget: money,
-    expenses: {},
-    optionalExpenses: {},
-    income: [],
-    savings: false,
-    timeData: time
+let personlMovieBD = {
+    count: nuberOfFilms,
+    movie: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-let a = prompt( 'Обов\'язкова стаття витрат', '' ),
-    b = prompt( 'Скальки коштує', '' ),
-    c = prompt( 'Обов\'язкова стаття витрат', '' ),
-    d = prompt( 'Скальки коштує', '' );
+let nameOfMovie = prompt ('Як називався фільм?', ''),
+    ratingOfMovie = prompt ('Яка ваша оцінка фільму?'),
+    nameOfMovie2 = prompt ('Як називався фільм?', ''),
+    ratingOfMovie2 = prompt ('Яка ваша оцінка фільму?');
 
-appData.expenses[a] = b;
-appData.expenses[c] = d;
 
-alert(appData.budget / 30);
+personlMovieBD.movie[nameOfMovie] = ratingOfMovie;
+personlMovieBD.movie[nameOfMovie2] = ratingOfMovie2;
+
+
+console.log(personlMovieBD);
+
+
