@@ -10,6 +10,7 @@ let personalMovieDB = {
     privat: false
 };
 
+// __________WITHOUT-CICLE__________
 // let nameOfMovie = prompt ('Як називався фільм?', ''),
 //     ratingOfMovie = prompt ('Яка ваша оцінка фільму?'),
 //     nameOfMovie2 = prompt ('Як називався фільм?', ''),
@@ -18,7 +19,8 @@ let personalMovieDB = {
 // personlMovieBD.movie[nameOfMovie] = ratingOfMovie;
 // personlMovieBD.movie[nameOfMovie2] = ratingOfMovie2;
  
-for (let i = 1; i < 3; i++) {
+// __________FOR__________
+for (let i = 0; i < 2; i++) {
     let name = prompt ('Як називався фільм?', ''),
         rating = prompt ('Яка ваша оцінка фільму?');
 
@@ -28,6 +30,39 @@ for (let i = 1; i < 3; i++) {
         i--;
     }
 }
+
+// __________WHILE__________
+// let i = 0;
+// while (i < 2) {
+//     let name = prompt ('Як називався фільм?', ''),
+//         rating = prompt ('Яка ваша оцінка фільму?');
+
+//     i++;
+    
+//     if (name != null && rating != null && name != '' && rating != '' && name.length < 15 ) {
+//         personalMovieDB.movie[name] = rating;
+//     } else {
+//         i--;
+//     }
+// }
+
+// __________DO__________
+// let i = 0;
+
+// do {
+//     let name = prompt ('Як називався фільм?', ''),
+//         rating = prompt ('Яка ваша оцінка фільму?');
+
+//     if (name != null && rating != null && name != '' && rating != '' && name.length < 15 ) {
+//         personalMovieDB.movie[name] = rating;
+
+//     i++;
+
+//     } else {
+//         i--;
+//     }
+// } while (i < 2);
+
 if (personalMovieDB.count < 10) {
     console.log("Маловато фільмів");
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
